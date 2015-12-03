@@ -2,15 +2,18 @@
   <body>
     <table>
       <form action="send.php" method="post">
-        <tr><b>What kind of car would you like to buy?</b></tr>
+        <tr><td><b>What kind of car would you like to buy?</b></td></tr>
         <tr>
+		<td>
           <input type="radio" name="car" value="proton" checked>Proton &nbsp; 
           <input type="radio" name="car" value="honda">Honda &nbsp;
           <input type="radio" name="car" value="ferrari">Ferrari &nbsp;
           <input type="radio" name="car" value="ford">Ford 
-        </tr>
-        <tr><b>What colour do you want on your car?</b></tr>
+        </td>
+		</tr>
+        <tr><td><b>What colour do you want on your car?</b></td></tr>
         <tr>
+		<td>
           <select name="colour">
             <option value="white">White</option>
             <option value="red">Red</option>
@@ -18,21 +21,26 @@
             <option value="blue">Blue</option>
           </select> 
           Other: <input type="text" name="other">
+		</td>
         </tr>
-        <tr><b>Enter    of your preferred car:</b></tr>
+        <tr><td><b>Enter of your preferred car:</b></td></tr>
         <tr>
-          <textarea name="detail" row="5" column="50"></textarea>
-        </tr>
-        <tr><b>Tell us how to get in touch with you:</b></tr>
+		<td>
+          <textarea name="detail" rows="5" cols="50"></textarea>
+        </td>
+		</tr>
+        <tr><td><b>Tell us how to get in touch with you:</b></td></tr>
         <tr><td>Name</td><td><input type="text" name="name"></td></tr>
         <tr><td>E-mail</td><td><input type="email" name="email"></td></tr>
         <tr><td>Tel</td><td><input type="tel" name="tel"></td></tr>
         <tr><td>Fax</td><td><input type="tel" name="fax"></td></tr>
-        <tr><input type="checkbox" name="contactme" value="contactme">Please contact me as soon as possible regarding this matter.</tr>
+        <tr><td><input type="checkbox" name="contactme" value="contactme">Please contact me as soon as possible regarding this matter.</td></tr>
         <tr>
+		<td>
           <input type="submit" value="Send"> &nbsp;
           <input type="reset" value="Clear">
-        </tr>
+        </td>
+		</tr>
       </form>
     </table>
   </body>
